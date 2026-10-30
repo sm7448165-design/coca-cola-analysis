@@ -1,0 +1,41 @@
+-- Proposed MySQL 8+ schema; NOT EXECUTED in an actual MySQL server.
+-- Row ID is a technical import key, not an original CSV field.
+CREATE DATABASE IF NOT EXISTS coca_cola_supply_chain;
+USE coca_cola_supply_chain;
+CREATE TABLE IF NOT EXISTS inventory_distribution (
+  row_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `Date` DATE NOT NULL,
+  `Market` VARCHAR(100) NOT NULL,
+  `Country` VARCHAR(100) NOT NULL,
+  `Warehouse_ID` VARCHAR(100) NOT NULL,
+  `Product` VARCHAR(100) NOT NULL,
+  `Category` VARCHAR(100) NOT NULL,
+  `Sales_Channel` VARCHAR(100) NOT NULL,
+  `Promotion` VARCHAR(100) NOT NULL,
+  `Season` VARCHAR(100) NOT NULL,
+  `Holiday_Flag` INT NOT NULL,
+  `Opening_Inventory_Units` INT NOT NULL,
+  `Production_Units` INT NOT NULL,
+  `Demand_Units` INT NOT NULL,
+  `Forecast_Demand_Units` INT NOT NULL,
+  `Units_Sold` INT NOT NULL,
+  `Closing_Inventory_Units` INT NOT NULL,
+  `Safety_Stock_Units` INT NOT NULL,
+  `Reorder_Point_Units` INT NOT NULL,
+  `Stockout_Flag` INT NOT NULL,
+  `Overstock_Flag` INT NOT NULL,
+  `Lead_Time_Days` INT NOT NULL,
+  `Transport_Mode` VARCHAR(100) NOT NULL,
+  `Distance_KM` INT NOT NULL,
+  `Transport_Cost_USD` DECIMAL(14,2) NOT NULL,
+  `Unit_Price_USD` DECIMAL(14,2) NOT NULL,
+  `Sales_Revenue_USD` DECIMAL(14,2) NOT NULL,
+  `Inventory_Holding_Cost_USD` DECIMAL(14,2) NOT NULL,
+  `Waste_Units` INT NOT NULL,
+  `Waste_Cost_USD` DECIMAL(14,2) NOT NULL,
+  `Fill_Rate_Percent` DECIMAL(14,2) NOT NULL,
+  `Inventory_Turnover` DECIMAL(14,2) NOT NULL,
+  INDEX ix_market_date (`Market`, `Date`),
+  INDEX ix_product (`Product`),
+  INDEX ix_warehouse (`Warehouse_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

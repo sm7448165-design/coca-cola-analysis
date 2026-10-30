@@ -1,0 +1,12 @@
+{
+  "below_reorder": 1451,
+  "below_safety": 0,
+  "overstock_1_without_closing_above_reorder": 0,
+  "closing_above_opening_plus_production": 0,
+  "forecast_over": 24389,
+  "forecast_under": 24445,
+  "forecast_exact": 1166,
+  "mean_lead": 7.4903,
+  "weighted_ape": 7.971653283312792,
+  "overstock_flag_pct": 85.196
+}

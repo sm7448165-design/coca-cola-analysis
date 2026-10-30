@@ -1,0 +1,41 @@
+{
+  "file": "CocaCola_Inventory_Distribution_MySQL_Ready.csv",
+  "rows": 50000,
+  "columns": 31,
+  "sha256": "eb4c0a011af2ab56b8fe9e82d08400cea6893a699703bffd62698db6e6d1d7dc",
+  "date_min": "2023-01-01",
+  "date_max": "2025-12-31",
+  "invalid_dates": 0,
+  "nulls": 0,
+  "duplicates": 0,
+  "stockout_count": 0,
+  "overstock_count": 42598,
+  "revenue": 9991731.05,
+  "demand": 11472087,
+  "sold": 11472087,
+  "transport": 478330.33999999997,
+  "waste": 33120.34,
+  "holding": 699334.92,
+  "forecast_mae": 18.2903,
+  "markets": 8,
+  "countries": 28,
+  "products": 10,
+  "warehouses": 8,
+  "fill_rate_unique": [
+    100.0
+  ],
+  "all_demand_equals_sold": true,
+  "sales_revenue_formula_mismatches": 0,
+  "inventory_balance_mismatches": 3841,
+  "negative_numerics": {}
+}
+Market {'Middle East & Africa': 6387, 'Southeast Asia': 6340, 'Australia': 6268, 'Latin America': 6264, 'Asia Pacific': 6254, 'North America': 6229, 'India': 6168, 'Europe': 6090}
+Country {'India': 6168, 'Australia': 3179, 'New Zealand': 3089, 'South Korea': 2133, 'USA': 2101, 'Canada': 2094, 'Japan': 2083, 'China': 2038, 'Mexico': 2034, 'Saudi Arabia': 1665, 'Colombia': 1615, 'Egypt': 1598}
+Product {'Fuze Tea': 5115, 'Dasani': 5028, 'Coca-Cola Original': 5027, 'Fanta': 5012, 'Powerade': 5012, 'Sprite': 5011, 'Smartwater': 4998, 'Coca-Cola Zero Sugar': 4989, 'Minute Maid': 4927, 'Diet Coke': 4881}
+Category {'Soft Drink': 24920, 'Water': 10026, 'Tea': 5115, 'Sports Drink': 5012, 'Juice': 4927}
+Sales_Channel {'Restaurant': 10128, 'Convenience Store': 10038, 'E-commerce': 10026, 'Wholesaler': 9984, 'Supermarket': 9824}
+Promotion {'No Promotion': 29861, 'Discount': 7618, 'Festival Promotion': 7549, 'Bundle': 4972}
+Season {'Normal': 16472, 'Summer': 12684, 'Winter': 12559, 'Monsoon': 8285}
+Transport_Mode {'Truck': 30158, 'Ship': 12405, 'Rail': 4894, 'Air': 2543}
+Overstock by market {'Asia Pacific': 0.848, 'Australia': 0.848, 'Europe': 0.849, 'India': 0.855, 'Latin America': 0.855, 'Middle East & Africa': 0.855, 'North America': 0.855, 'Southeast Asia': 0.852}
+BUILD COMPLETE /mnt/data/coca_project/report/Coca_Cola_Evidence_Based_Project_Report.pdf pages to check

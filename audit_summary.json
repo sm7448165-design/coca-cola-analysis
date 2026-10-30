@@ -1,0 +1,31 @@
+{
+  "file": "CocaCola_Inventory_Distribution_MySQL_Ready.csv",
+  "rows": 50000,
+  "columns": 31,
+  "sha256": "eb4c0a011af2ab56b8fe9e82d08400cea6893a699703bffd62698db6e6d1d7dc",
+  "date_min": "2023-01-01",
+  "date_max": "2025-12-31",
+  "invalid_dates": 0,
+  "nulls": 0,
+  "duplicates": 0,
+  "stockout_count": 0,
+  "overstock_count": 42598,
+  "revenue": 9991731.05,
+  "demand": 11472087,
+  "sold": 11472087,
+  "transport": 478330.33999999997,
+  "waste": 33120.34,
+  "holding": 699334.92,
+  "forecast_mae": 18.2903,
+  "markets": 8,
+  "countries": 28,
+  "products": 10,
+  "warehouses": 8,
+  "fill_rate_unique": [
+    100.0
+  ],
+  "all_demand_equals_sold": true,
+  "sales_revenue_formula_mismatches": 0,
+  "inventory_balance_mismatches": 3841,
+  "negative_numerics": {}
+}

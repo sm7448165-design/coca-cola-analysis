@@ -1,0 +1,32 @@
+Column Name,Data Type,Description,Business Meaning,Example,Analytical Use,Missing,Unique,Minimum,Maximum
+Date,DATE,Record date,Record date,2025-04-26,Time-based analysis,0,1096,2023-01-01,2025-12-31
+Market,VARCHAR,Regional market,Regional market,Southeast Asia,Grouping/filter,0,8,,
+Country,VARCHAR,Country associated with record,Country associated with record,Thailand,Grouping/filter,0,28,,
+Warehouse_ID,VARCHAR,Warehouse label; not independently verified as a unique physical facility,Warehouse label; not independently verified as a unique physical facility,WH-08,Grouping/filter,0,8,,
+Product,VARCHAR,Beverage product name,Beverage product name,Minute Maid,Grouping/filter,0,10,,
+Category,VARCHAR,Beverage grouping,Beverage grouping,Juice,Grouping/filter,0,5,,
+Sales_Channel,VARCHAR,Channel through which product sold,Channel through which product sold,Supermarket,Grouping/filter,0,5,,
+Promotion,VARCHAR,Promotional classification,Promotional classification,No Promotion,Grouping/filter,0,4,,
+Season,VARCHAR,Season as supplied (interpretation may vary by geography),Season as supplied (interpretation may vary by geography),Normal,Grouping/filter,0,4,,
+Holiday_Flag,INT,Source-provided holiday indicator; definition not independently validated,Source-provided holiday indicator; definition not independently validated,0,KPI/metric or quality control,0,2,0,1
+Opening_Inventory_Units,INT,Beginning stock in units,Beginning stock in units,499,KPI/metric or quality control,0,1718,17,3569
+Production_Units,INT,Produced units,Produced units,206,KPI/metric or quality control,0,1177,16,2335
+Demand_Units,INT,Recorded demand units,Recorded demand units,204,KPI/metric or quality control,0,1016,19,1818
+Forecast_Demand_Units,INT,Forecast demand in units,Forecast demand in units,213,KPI/metric or quality control,0,1029,16,1850
+Units_Sold,INT,Units recorded as sold,Units recorded as sold,204,KPI/metric or quality control,0,1016,19,1818
+Closing_Inventory_Units,INT,Reported end stock units,Reported end stock units,501,KPI/metric or quality control,0,1789,14,3495
+Safety_Stock_Units,INT,Supplied safety stock threshold; formula unknown,Supplied safety stock threshold; formula unknown,39,KPI/metric or quality control,0,384,5,590
+Reorder_Point_Units,INT,Supplied reorder trigger; formula unknown,Supplied reorder trigger; formula unknown,152,KPI/metric or quality control,0,839,9,1681
+Stockout_Flag,INT,Supplied stock-out event flag; all zeros,Supplied stock-out event flag; all zeros,0,KPI/metric or quality control,0,1,0,0
+Overstock_Flag,INT,Supplied overstock flag; definition unknown,Supplied overstock flag; definition unknown,1,KPI/metric or quality control,0,2,0,1
+Lead_Time_Days,INT,Recorded delivery lead time in days,Recorded delivery lead time in days,14,KPI/metric or quality control,0,14,1,14
+Transport_Mode,VARCHAR,Recorded transportation mode,Recorded transportation mode,Truck,Grouping/filter,0,4,,
+Distance_KM,INT,Transportation distance in kilometers,Transportation distance in kilometers,413,KPI/metric or quality control,0,4980,20,4999
+Transport_Cost_USD,DECIMAL,Recorded transportation cost (USD),Recorded transportation cost (USD),1.06,KPI/metric or quality control,0,2954,0.04,36.48
+Unit_Price_USD,DECIMAL,Unit selling price (USD),Unit selling price (USD),1.1,KPI/metric or quality control,0,10,0.55,1.25
+Sales_Revenue_USD,DECIMAL,Recorded sales value (USD),Recorded sales value (USD),224.4,KPI/metric or quality control,0,4918,11.55,2118.75
+Inventory_Holding_Cost_USD,DECIMAL,Reported holding cost (USD),Reported holding cost (USD),31.72,KPI/metric or quality control,0,5336,0.17,185.44
+Waste_Units,INT,Reported waste in units,Reported waste in units,0,KPI/metric or quality control,0,20,0,19
+Waste_Cost_USD,DECIMAL,Reported waste cost (USD),Reported waste cost (USD),0.0,KPI/metric or quality control,0,152,0.0,23.75
+Fill_Rate_Percent,DECIMAL,Source-provided service fill rate; constant at 100,Source-provided service fill rate; constant at 100,100.0,KPI/metric or quality control,0,1,100.0,100.0
+Inventory_Turnover,DECIMAL,Source-provided turnover metric; scope/formula unverified,Source-provided turnover metric; scope/formula unverified,0.41,KPI/metric or quality control,0,118,0.36,1.53
